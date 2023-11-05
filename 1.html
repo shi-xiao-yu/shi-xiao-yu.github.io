@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+var init = function() {
+    var gamedetail = {
+		iGameID: 195292,
+		downloadUrl: 'https://dlied5.qq.com/daojucheng/daoju-qq-latest.apk',
+		packageName: 'com.tencent.gamereva',
+		apkVersionName: '9.9.9.9',
+		downloadFileMd5: '08d5ea5a02892a1a9b0c3dd30a8e72c8',
+		originApkMd5: '08d5ea5a02892a1a9b0c3dd30a8e72c8',
+		szGameIcon: 'https://gamer.qpic.cn/2022/07/13_1657694155390_622.png',
+	    	gameSize: '170517820',
+		gameName: '腾讯先锋'
+	};
+	if (window.WebViewJavascriptBridge){
+		window.WebViewJavascriptBridge.callHandler('download', gamedetail);
+	} else {
+		console.log('no');
+		setTimeout(init, 1000 );
+	}
+	
+}
+window.onload = init;
+</script>
+</head>
+<body>
+</body
+</html>
